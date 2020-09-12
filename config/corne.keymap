@@ -27,24 +27,24 @@
 // | SHFT | F6 | F7 | F8 | F9  | F10 |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
 //                | ALT | LGUI |     |   | ENT  | CTRL | TG L3 |
                         bindings = <
-   &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp KPLS
-   &kp TILD &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS &kp EQL
-   &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &kp   F10   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp PIPE  &kp RSFT
+   &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
+   &kp TILD &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
+   &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &kp   F10   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
                                      &kp LALT &kp LGUI &trans   &kp RET &kp RCTL &tog 3
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  | 0   | =    |
+// | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | BKSP |
+// | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
 // | SHFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | SHFT |
 //                   | ALT | LGUI | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp  PRCT            &kp CRRT  &kp AMPS  &kp KMLT  &kp LPRN  &kp RPRN  &kp BKSP
-   &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5            &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp EQL
-   &kp LSFT &kp MINUS &kp KPLS  &kp LCUR  &kp LBKT  &mt MOD_LSFT NUM_9   &mt MOD_LSFT NUM_0  &kp RBKT  &kp RCUR  &none    &kp BSLH  &kp RSFT
-                                    &kp LALT &kp LGUI &kp SPC            &trans &kp RCTL &kp RALT
+   &kp  TAB &kp BANG  &kp ATSN  &kp HASH        &kp CURU  &kp  PRCT                     &kp CRRT         &kp AMPS  &kp KMLT        &kp MINUS  &kp KPLS  &kp BKSP
+   &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3       &kp NUM_4 &kp NUM_5                     &kp NUM_6        &kp NUM_7 &kp NUM_8       &kp NUM_9  &kp NUM_0 &kp EQL
+   &kp LSFT &kp MINUS &kp KPLS  &kp (LSFT|LBKT) &kp LBKT  &kp (LSFT|NUM_9)              &kp (LSFT|NUM_0) &kp RBKT  &kp (LSFT|RBKT) &none      &kp BSLH  &kp RSFT
+                                    &kp LALT &kp LGUI &kp SPC                           &trans &kp RCTL &kp RALT
                         >;
                 };
 
