@@ -44,7 +44,7 @@
    &kp  TAB &kp BANG  &kp ATSN  &kp HASH        &kp CURU  &kp  PRCT          &kp CRRT         &kp AMPS  &kp KMLT        &kp MINUS  &kp KPLS  &kp BKSP
    &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3       &kp NUM_4 &kp NUM_5          &kp NUM_6        &kp NUM_7 &kp NUM_8       &kp NUM_9  &kp NUM_0 &kp EQL
    &kp LSFT &kp MINUS &kp KPLS  &kp (LSFT|LBKT) &kp LBKT  &kp (LSFT|NUM_9)   &kp (LSFT|NUM_0) &kp RBKT  &kp (LSFT|RBKT) &none      &kp BSLH  &kp RSFT
-                                                &kp LALT &kp LGUI &kp SPC    &kp ENT &kp RCTL &kp RALT
+                                                &kp LALT &kp LGUI &kp SPC    &kp trans &kp RCTL &kp RALT
                         >;
                 };
 
@@ -57,7 +57,7 @@
                         bindings = <
    &kp TAB  &none &none    &kp UARW &none    &none       &kp TAB         &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp MINUS &kp BKSP
    &tog 3   &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KPLS  &kp FSLH
-   &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KMLT  &kp ENT
+   &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KMLT  &kp RET
                            &kp LALT &kp LGUI &kp SPC     &kp DOT &kp NUM_0 &kp RALT
                         >;
                 };
