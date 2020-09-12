@@ -29,7 +29,7 @@
                         bindings = <
    &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp KPLS
    &kp TILD &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS &kp EQL
-   &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &kp   F10   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &cp M_PIPE  &kp RSFT
+   &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &kp   F10   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp PIPE  &kp RSFT
                                      &kp LALT &kp LGUI &trans   &kp RET &kp RCTL &tog 3
                         >;
                 };
@@ -43,7 +43,7 @@
                         bindings = <
    &kp  TAB &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp  PRCT   &kp CRRT  &kp AMPS  &kp KMLT  &kp LPRN  &kp RPRN  &kp BKSP
    &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp EQL
-   &kp LSFT &kp MINUS &kp KPLS  &kp LCUR  &kp LBKT  &kp  LPRN   &kp RPRN  &kp RBKT  &kp RCUR  &trans    &kp BSLH  &kp RSFT
+   &kp LSFT &kp MINUS &kp KPLS  &kp LCUR  &kp LBKT  &kp  0xb6   &kp 0xb7  &kp RBKT  &kp RCUR  &none    &kp BSLH  &kp RSFT
                                     &kp LALT &kp LGUI &kp SPC   &trans &kp RCTL &kp RALT
                         >;
                 };
