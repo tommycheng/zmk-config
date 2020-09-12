@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#define NUMPAD 3
+
 
 / {
         keymap {
@@ -20,19 +22,33 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | `    | F1 | F2 | F3 | F4  | F5  |   | 6    | 7    | 8    | 9     | 0 | +    |
+// | ~    | 1  | 2  | 3  |  4  | 5   |   | LEFT | DOWN | UP   | Right | - | =    |
+// | SHFT | F6 | F7 | F8 | F9  | F10 |   | HOME | END  | PGUP | PGDN  | \ | SHFT |
+//                | ALT | LGUI |     |   | ENT  | CTRL | TG L3 |
                         bindings = <
-   &kp ESC  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
-   &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-                                      &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
+   &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp KPLS
+   &kp TILD &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS &kp EQL
+   &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &kp   F10   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp BSLH  &kp RSFT
+                                     &kp LALT &kp LGUI &trans   &kp RET &kp RCTL &kp RALT
                         >;
                 };
 
                 raise_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
+   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+   &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
+                                      &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
+                        >;
+                };
+
+                numpad_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
