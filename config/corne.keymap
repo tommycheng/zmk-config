@@ -58,7 +58,7 @@
    &kp TAB  &none &none    &kp UARW &none    &none       &kp (LSFT|TAB)  &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp MINUS &kp BKSP
    &tog 3   &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KPLS  &kp FSLH
    &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KMLT  &kp RET
-                           &kp LALT &kp LGUI &kp SPC     &kp DOT &kp NUM_0 &kp RALT
+                         &kp LALT &kp LGUI &lt 1 SPC     &kp DOT &kp NUM_0 &kp RALT
                         >;
                 };
         };
