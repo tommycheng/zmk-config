@@ -41,10 +41,10 @@
 // | SHFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | SHFT |
 //                   | ALT | LGUI | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS  &kp KMLT  &kp LPRN  &kp RPRN  &kp BKSP
-   &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &EQL
-   &kp LSFT &kp MINUS &kp KPLS  &kp LCUR  &kp LBKT  &kp LPRN    &kp RPRN  &kp RBKT  &kp RCUR  &trans    &kp BSLH  &RSFT
-                                      &kp LGUI &trans &kp SPC   &trans &RCTL &kp RALT
+   &kp  TAB &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp  PRCT   &kp CRRT  &kp AMPS  &kp KMLT  &kp LPRN  &kp RPRN  &kp BKSP
+   &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp EQL
+   &kp LSFT &kp MINUS &kp KPLS  &kp LCUR  &kp LBKT  &kp  LPRN   &kp RPRN  &kp RBKT  &kp RCUR  &trans    &kp BSLH  &kp RSFT
+                                    &kp LALT &kp LGUI &kp SPC   &trans &kp RCTL &kp RALT
                         >;
                 };
 
