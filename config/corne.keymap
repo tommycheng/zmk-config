@@ -28,7 +28,7 @@
 //               | LALT | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
    &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
-   &kp TILD &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
+   &kp (LSFT|GRAV) &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
    &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
                                      &kp LALT &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
                         >;
@@ -47,7 +47,7 @@
                                                 &kp (LSFT|NUM_4)  
                                                           &kp  (LSFT|NUM_5)   &kp (LSFT|NUM_6) &kp (LSFT|NUM_7)  
                                                                                                          &kp KMLT        &kp MINUS  &kp KPLS  &kp BKSP
-   &kp LCTL &kp NUM_1 &kp NUM_2 &kp NUM_3       &kp NUM_4 &kp NUM_5           &kp NUM_6        &kp NUM_7 &kp NUM_8       &kp NUM_9  &kp NUM_0 &kp EQL
+   &kp (LSFT|GRAV) &kp NUM_1 &kp NUM_2 &kp NUM_3       &kp NUM_4 &kp NUM_5           &kp NUM_6        &kp NUM_7 &kp NUM_8       &kp NUM_9  &kp NUM_0 &kp EQL
    &kp LSFT &kp MINUS &kp KPLS  &kp (LSFT|LBKT) &kp LBKT  &kp (LSFT|NUM_9)    &kp (LSFT|NUM_0) &kp RBKT  &kp (LSFT|RBKT) &none      &kp BSLH  &kp RSFT
                                     &kp LALT &kp LGUI &kp SPC                 &trans &kp SPC &kp RCTL
                         >;
