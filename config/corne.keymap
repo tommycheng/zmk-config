@@ -31,7 +31,7 @@
    &kp (LSFT|GRAV)    
             &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
    &kp LSFT &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
-                                     &kp LALT &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
+                                    &osk LCTL &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
                         >;
                 };
 
