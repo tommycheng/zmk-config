@@ -80,7 +80,7 @@
    &none  &none &none &none &none &none    &none  &none &none &none &none &none
    &none  &none &none &none &none &none    &none  &none &none &none &none &none
    &none  &none &none &none &none &tog 3   &none  &none &none &none &none &none
-            &kp LALT &kp LGUI &kp trans    &kp RET &kp SPC &kp RCTL
+               &kp LALT &kp LGUI &trans    &kp RET &kp SPC &kp RCTL
                         >;
                 };
         };
