@@ -76,11 +76,11 @@
 // |      |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
 //                  | LALT | LGUI | SPC |   | RET | SPC | RCTL |
                         bindings = <
-   &bt BT_SEL 0 
+   &bt BT_SEL 0
           &bt BT_SEL 1
-                 &bt BT_SEL 2 
+                 &bt BT_SEL 2
                       &bt BT_SEL 3
-                            &bt BT_SEL 4 
+                            &bt BT_SEL 4
                                   &bt BT_CLR    &none  &none &none &none &none &none
    &none  &none &none &none &none &none         &none  &none &none &none &none &none
    &none  &none &none &none &none &tog 3        &none  &none &none &none &none &none
