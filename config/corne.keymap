@@ -22,27 +22,26 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | `    | F1 | F2 | F3 | F4  | F5    |   | 6    | 7    | 8    | 9     | 0   | +    |
-// | ~    | 1  | 2  | 3  |  4  | 5     |   | LEFT | DOWN | UP   | Right | -   | =    |
+// | ~    | F1 | F2 | F3 | F4  | F5    |   | 6    | 7    | 8    | 9     | 0   | +    |
+// | 0    | 1  | 2  | 3  |  4  | 5     |   | LEFT | DOWN | UP   | Right | -   | =    |
 // | LCTL | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
 //               | LALT | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
-   &kp GRAV &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
-   &kp (LSFT|GRAV)    
-            &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
-   &osk LCTL &kp F6   &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
-                                     &kp LALT &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
+   &kp (LSFT|GRAV) &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
+   &kp NUM_0       &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
+   &osk LCTL       &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
+                                            &kp LALT &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | BKSP |
+// | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | BKSP |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | SHFT |
 //                  | LALT | LGUI | SPC |   |     | SPC | RCTL |
                         bindings = <
-   &kp  TAB &kp (LSFT|NUM_1)  
+   &kp GRAV  &kp (LSFT|NUM_1)  
                       &kp (LSFT|NUM_2)  
                                 &kp (LSFT|NUM_3)        
                                                 &kp (LSFT|NUM_4)  
