@@ -26,13 +26,13 @@
 // -----------------------------------------------------------------------------------------
 // | ~    | F1 | F2 | F3 | F4  | F5    |   | 6    | 7    | 8    | 9     | 0   | +    |
 // | 0    | 1  | 2  | 3  |  4  | 5     |   | LEFT | DOWN | UP   | Right | -   | =    |
-// | LCTL | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
-//               | LALT | LGUI |       |   | RET  | SPC  | RCTL |
+// | LSFT | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
+//               | LCTL | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
    &kp (LSFT|GRAV) &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
    &kp NUM_0       &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
-   &osk LCTL       &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
-                                            &kp LALT &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
+   &kp LSFT        &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp (LSFT|BSLH)  &kp RSFT
+                                           &osk LCTL &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
                         >;
                 };
 
@@ -73,15 +73,15 @@
 
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// | bt 0 | bt 1 | bt 2  | bt 3 | bt 4 | btclr |   |   |     |     |     |     |    |
-// |      |      |       |      |      |       |   |   |     |     |     |     |    |
-// |      |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
+// | btclr | bt 0 | bt 1  | bt 2 | bt 3 | bt 4  |   |   |     |     |     |     |    |
+// |       |      |       |      |      |       |   |   |     |     |     |     |    |
+// |       |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
 //                  | LALT | LGUI | SPC |   | RET | SPC | RCTL |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
-   &none  &none &none &none &none &none         &none  &none &none &none &none &none
-   &none  &none &none &none &none &tog 3        &none  &none &none &none &none &none
-                    &kp LALT &kp LGUI &trans    &kp RET &kp SPC &kp RCTL
+   &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
+   &none  &none &none &none &none &tog 3                                          &none  &none &none &none &none &none
+                    &kp LALT &kp LGUI &trans                                      &kp RET &kp SPC &kp RCTL
                         >;
                 };
         };
