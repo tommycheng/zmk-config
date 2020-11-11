@@ -29,8 +29,8 @@
 // | LSFT | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
 //               | LCTL | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
-   &kp (LSFT|GRAV) &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0        &kp KPLS
-   &kp NUM_0       &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
+   &kp (LSFT|GRAV) &kp F1    &kp F2    &kp F3    &kp F4    &kp    F5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0        &kp KPLS
+   &kp N0       &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS        &kp EQL
    &kp LSFT        &kp F6    &kp F7    &kp F8    &kp F9    &tog 3      &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp LS(BSLH)  &kp RSFT
                                             &kp LCTL &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
                         >;
@@ -43,15 +43,15 @@
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | SHFT |
 //                  | LALT | LGUI | SPC |   |     | SPC | RCTL |
                         bindings = <
-   &kp GRAV  &kp LS(NUM_1)  
-                      &kp LS(NUM_2)  
-                                &kp LS(NUM_3)        
-                                                &kp LS(NUM_4)  
-                                                          &kp  LS(NUM_5)   &kp LS(NUM_6) &kp LS(NUM_7)  
-                                                                                                         &kp KMLT        &kp MINUS  &kp KPLS  &kp BKSP
+   &kp GRAV  &kp EXCL  
+                      &kp AT  
+                                &kp POUND        
+                                                &kp DOLLAR  
+                                                          &kp  PERCENT   &kp CARET &kp AMPS  
+                                                                                                         &kp ASTRK        &kp MINUS  &kp KPLS  &kp BKSP
    &kp LS(GRAV) 
-             &kp NUM_1 &kp NUM_2 &kp NUM_3       &kp NUM_4 &kp NUM_5           &kp NUM_6        &kp NUM_7 &kp NUM_8       &kp NUM_9  &kp NUM_0 &kp EQL
-   &kp LSFT  &kp MINUS &kp KPLS  &kp LS(LBKT) &kp LBKT  &kp LS(NUM_9)    &kp LS(NUM_0) &kp RBKT  &kp LS(RBKT) &none      &kp BSLH  &kp RSFT
+             &kp N1 &kp N2 &kp N3       &kp N4 &kp N5           &kp N6        &kp N7 &kp N8       &kp N9  &kp N0 &kp EQL
+   &kp LSFT  &kp MINUS &kp KPLS  &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &none      &kp BSLH  &kp RSFT
                                                   &kp LALT &kp LGUI &kp SPC    &trans &kp SPC &kp RCTL
                         >;
                 };
@@ -63,10 +63,10 @@
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
 //                  | LALT | LGUI | L4/SPC |   | .     |  0  | RALT |
                         bindings = <
-   &kp TAB  &none &none    &kp UARW &none    &none       &kp LS(TAB)  &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp MINUS &kp BKSP
-   &kp ESC  &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KPLS  &kp FSLH
-   &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KMLT  &kp RET
-                         &kp LALT &kp LGUI &lt 4 SPC     &kp DOT &kp NUM_0 &kp RCTL
+   &kp TAB  &none &none    &kp UARW &none    &none       &kp LS(TAB)  &kp N7 &kp N8 &kp N9 &kp MINUS &kp BKSP
+   &kp ESC  &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp N4 &kp N5 &kp N6 &kp KPLS  &kp FSLH
+   &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp N1 &kp N2 &kp N3 &kp KMLT  &kp RET
+                         &kp LALT &kp LGUI &lt 4 SPC     &kp DOT &kp N0 &kp RCTL
                         >;
                 };
 
