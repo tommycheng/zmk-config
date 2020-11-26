@@ -61,12 +61,12 @@
 // | TAB   |   |      | UP   |       |     |   | S-TAB |  7  |  8  |  9  |  -  | BKSP |
 // | ESC   |   | LEFT | DOWN | RIGHT | TAB |   | TAB   |  4  |  5  |  6  |  +  | /    |
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
-//                  | LALT | LGUI | L4/SPC |   | .     |  0  | RALT |
+//                  | LALT | LGUI | L4/SPC |   | SPC   |  0  | RALT |
                         bindings = <
    &kp TAB  &none &none    &kp UARW &none    &none       &kp LS(TAB)  &kp N7 &kp N8 &kp N9 &kp MINUS &kp BKSP
    &kp ESC  &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp N4 &kp N5 &kp N6 &kp KPLS  &kp FSLH
    &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp N1 &kp N2 &kp N3 &kp KMLT  &kp RET
-                         &kp LALT &kp LGUI &lt 4 SPC     &kp DOT &kp N0 &kp RCTL
+                         &kp LALT &kp LGUI &lt 4 SPC     &kp SPC &kp N0 &kp RCTL
                         >;
                 };
 
@@ -76,7 +76,7 @@
 // | btclr | bt 0 | bt 1  | bt 2 | bt 3 | bt 4  |   |   |     |     |     |     |    |
 // |       |      |       |      |      |       |   |   |     |     |     |     |    |
 // |       |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
-//                  | LALT | LGUI | SPC |   | RET | SPC | RCTL |
+//                          | LALT | LGUI | SPC |   | RET | SPC | RCTL |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
