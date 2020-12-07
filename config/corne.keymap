@@ -40,19 +40,22 @@
 // -----------------------------------------------------------------------------------------
 // | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | BKSP |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
-// | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | SHFT |
+// | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  .  |  \  | SHFT |
 //                  | LALT | LGUI | SPC |   |     | SPC | RCTL |
                         bindings = <
    &kp GRAV  &kp EXCL  
                       &kp AT  
                                 &kp POUND        
-                                                &kp DOLLAR  
-                                                          &kp  PERCENT   &kp CARET &kp AMPS  
-                                                                                                         &kp ASTRK        &kp MINUS  &kp KPLS  &kp BKSP
+                                             &kp DOLLAR  
+                                                       &kp PERCENT   &kp CARET  &kp AMPS  
+                                                                                          &kp ASTRK    
+                                                                                                       &kp MINUS  
+                                                                                                                 &kp KPLS  
+                                                                                                                           &kp BKSP
    &kp LS(GRAV) 
-             &kp N1 &kp N2 &kp N3       &kp N4 &kp N5           &kp N6        &kp N7 &kp N8       &kp N9  &kp N0 &kp EQL
-   &kp LSFT  &kp MINUS &kp KPLS  &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &none      &kp BSLH  &kp RSFT
-                                                  &kp LALT &kp LGUI &kp SPC    &trans &kp SPC &kp RCTL
+             &kp N1    &kp N2   &kp N3       &kp N4    &kp N5        &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &kp EQL
+   &kp LSFT  &kp MINUS &kp KPLS &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &kp DOT   &kp BSLH  &kp RSFT
+                                        &kp LALT &kp LGUI &kp SPC    &trans &kp SPC &kp RCTL
                         >;
                 };
 
