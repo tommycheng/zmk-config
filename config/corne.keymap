@@ -29,11 +29,10 @@
 // | LSFT | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
 //               | LCTL | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
-   &kp TILDE 
-             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &kp KP_PLUS
-   &kp N0    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp MINUS  &kp LS(BSLH)     
+   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8     &kp N9     &kp N0       &kp KP_PLUS
+   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE     
    &kp LSHFT  &kp F6  &kp F7  &kp F8  &kp F9  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
-                             &kp LCTRL &kp LGUI &trans   &kp RET &kp SPACE &kp RCTRL
+                           &kp LCTRL &kp LGUI &trans   &kp RET &kp SPACE &kp RCTRL
                         >;
                 };
 
@@ -44,19 +43,10 @@
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  .  |  \  | SHFT |
 //                  | LALT | LGUI | SPC |   |     | SPC | RCTL |
                         bindings = <
-   &kp GRAVE  &kp EXCL  
-                      &kp AT  
-                                &kp POUND        
-                                             &kp DOLLAR  
-                                                       &kp PERCENT   &kp CARET  &kp AMPS  
-                                                                                          &kp ASTRK    
-                                                                                                       &kp MINUS  
-                                                                                                                 &kp KP_PLUS  
-                                                                                                                           &kp BSPC
-   &kp LS(GRAVE) 
-             &kp N1    &kp N2   &kp N3       &kp N4    &kp N5        &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &kp EQUAL
-   &kp LSHFT  &kp MINUS &kp KP_PLUS &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &kp DOT   &kp BSLH  &kp RSHFT
-                                        &kp LALT &kp LGUI &kp SPACE    &trans &kp SPACE &kp RCTRL
+   &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS  &kp BSPC
+   &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
+   &kp LSHFT &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp DOT   &kp BSLH  &kp RSHFT
+                                &kp LALT &kp LGUI &kp SPACE    &trans &kp SPACE &kp RCTRL
                         >;
                 };
 
@@ -67,10 +57,10 @@
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
 //                  | LALT | LGUI | L4/SPC |   | SPC   |  0  | RALT |
                         bindings = <
-   &kp TAB  &none &none    &kp UP &none    &none       &kp LS(TAB)  &kp N7 &kp N8 &kp N9 &kp MINUS &kp BSPC
-   &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB         &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp FSLH
-   &kp LSHFT &none &none    &none    &none    &none       &kp DOT         &kp N1 &kp N2 &kp N3 &kp KP_MULTIPLY  &kp RET
-                         &kp LALT &kp LGUI &lt 4 SPACE     &kp SPACE &kp N0 &kp RCTRL
+   &kp TAB  &none &none    &kp UP   &none     &none       &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
+   &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
+   &kp LSHFT &none &none   &none    &none     &none       &kp DOT     &kp N1 &kp N2 &kp N3 &kp ASTRK   &kp RET
+                        &kp LALT &kp LGUI &lt 4 SPACE     &kp SPACE &kp N0 &kp RCTRL
                         >;
                 };
 
