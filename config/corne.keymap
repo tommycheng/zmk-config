@@ -16,10 +16,10 @@
 // | LSFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSFT |
 //            | LALT | LGUI/SPC| L1/SPC |   | L2/RET | SPC | RCTL |
                         bindings = <
-   &kp TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
-   &kp ESC  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SCLN &kp QUOT
-   &kp LSFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA  &kp DOT &kp FSLH &kp RSFT
-          &kp LALT &mt LGUI SPC &lt 1 SPC   &lt 2 RET &kp SPC &kp RCTL
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I      &kp O   &kp P    &kp BSPC
+   &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K      &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA  &kp DOT &kp FSLH &kp RSHFT
+       &kp LALT &mt LGUI SPACE &lt 1 SPACE   &lt 2 RET &kp SPACE &kp RCTRL
                         >;
                 };
                 lower_layer {
@@ -29,11 +29,11 @@
 // | LSFT | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
 //               | LCTL | LGUI |       |   | RET  | SPC  | RCTL |
                         bindings = <
-   &kp (LSFT|GRAV) 
-             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &kp KPLS
-   &kp N0    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp MINUS  &kp LS(BSLH)     
-   &kp LSFT  &kp F6  &kp F7  &kp F8  &kp F9  &tog 3   &kp HOME  &kp END   &kp PGUP  &kp PGDN  &kp EQL    &kp RSFT
-                             &kp LCTL &kp LGUI &trans   &kp RET &kp SPC &kp RCTL
+   &kp TILDE 
+             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &kp KP_PLUS
+   &kp N0    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp MINUS  &kp LS(BSLH)     
+   &kp LSHFT  &kp F6  &kp F7  &kp F8  &kp F9  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
+                             &kp LCTRL &kp LGUI &trans   &kp RET &kp SPACE &kp RCTRL
                         >;
                 };
 
@@ -44,19 +44,19 @@
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  .  |  \  | SHFT |
 //                  | LALT | LGUI | SPC |   |     | SPC | RCTL |
                         bindings = <
-   &kp GRAV  &kp EXCL  
+   &kp GRAVE  &kp EXCL  
                       &kp AT  
                                 &kp POUND        
                                              &kp DOLLAR  
                                                        &kp PERCENT   &kp CARET  &kp AMPS  
                                                                                           &kp ASTRK    
                                                                                                        &kp MINUS  
-                                                                                                                 &kp KPLS  
-                                                                                                                           &kp BKSP
-   &kp LS(GRAV) 
-             &kp N1    &kp N2   &kp N3       &kp N4    &kp N5        &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &kp EQL
-   &kp LSFT  &kp MINUS &kp KPLS &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &kp DOT   &kp BSLH  &kp RSFT
-                                        &kp LALT &kp LGUI &kp SPC    &trans &kp SPC &kp RCTL
+                                                                                                                 &kp KP_PLUS  
+                                                                                                                           &kp BSPC
+   &kp LS(GRAVE) 
+             &kp N1    &kp N2   &kp N3       &kp N4    &kp N5        &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &kp EQUAL
+   &kp LSHFT  &kp MINUS &kp KP_PLUS &kp LS(LBKT) &kp LBKT  &kp LS(N9)    &kp LS(N0) &kp RBKT  &kp LS(RBKT) &kp DOT   &kp BSLH  &kp RSHFT
+                                        &kp LALT &kp LGUI &kp SPACE    &trans &kp SPACE &kp RCTRL
                         >;
                 };
 
@@ -67,10 +67,10 @@
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
 //                  | LALT | LGUI | L4/SPC |   | SPC   |  0  | RALT |
                         bindings = <
-   &kp TAB  &none &none    &kp UARW &none    &none       &kp LS(TAB)  &kp N7 &kp N8 &kp N9 &kp MINUS &kp BKSP
-   &kp ESC  &none &kp LARW &kp DARW &kp RARW &kp TAB     &kp TAB         &kp N4 &kp N5 &kp N6 &kp KPLS  &kp FSLH
-   &kp LSFT &none &none    &none    &none    &none       &kp DOT         &kp N1 &kp N2 &kp N3 &kp KMLT  &kp RET
-                         &kp LALT &kp LGUI &lt 4 SPC     &kp SPC &kp N0 &kp RCTL
+   &kp TAB  &none &none    &kp UP &none    &none       &kp LS(TAB)  &kp N7 &kp N8 &kp N9 &kp MINUS &kp BSPC
+   &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB         &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp FSLH
+   &kp LSHFT &none &none    &none    &none    &none       &kp DOT         &kp N1 &kp N2 &kp N3 &kp KP_MULTIPLY  &kp RET
+                         &kp LALT &kp LGUI &lt 4 SPACE     &kp SPACE &kp N0 &kp RCTRL
                         >;
                 };
 
@@ -85,9 +85,8 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
    &none  &none &none &none &none &tog 3                                          &none  &none &none &none &none &none
-                    &kp LALT &kp LGUI &trans                                      &kp RET &kp SPC &kp RCTL
+                    &kp LALT &kp LGUI &trans                                      &kp RET &kp SPACE &kp RCTRL
                         >;
                 };
         };
 };  
-
