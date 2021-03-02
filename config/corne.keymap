@@ -5,6 +5,10 @@
 #define NUMPAD 3
 #define CTRL 4
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
