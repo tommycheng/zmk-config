@@ -28,24 +28,24 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | LSFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSFT |
-//                 | LALT | SPC| L1/SPC |   | L2/RET | BSPC | BSPC |
+//                  | TAB | SPC| L1/SPC |   | L2/RET | BSPC | BSPC |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O        &kp P          &kp BSPC
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI D  &hm LCTRL F  &kp G   &kp H  &hm RCTRL J  &hm RGUI K  &hm RALT L  &hm RSFT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
-                                       &kp LALT &kp SPACE &lt 1 SPACE   &lt 2 RET &kp BSPC &kp BSPC
+                                       &kp TAB  &kp SPACE &lt 1 SPACE   &lt 2 RET &kp BSPC &kp BSPC
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ~    | F1 | F2 | F3 | F4  | F5    |   | 6    | 7    | 8    | 9     | 0   | +    |
+// | ~    | F1 | F2 | F3 | F4  | F5    |   | F6   | F7   | F8   | F9    | F10 | +    |
 // | 0    | 1  | 2  | 3  |  4  | 5     |   | LEFT | DOWN | UP   | Right | -   | "|"  |
-// | LSFT | F6 | F7 | F8 | F9  | TG L3 |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
-//               | LCTL | LGUI |       |   | RET  | SPC  | BSPC |
+// | LSFT | 9  | 8  | 7  |  6  | TG L3 |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
+//                 | TAB | SPC |       |   | RET  | SPC  | BSPC |
                         bindings = <
-   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8     &kp N9     &kp N0       &kp KP_PLUS
+   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp F10      &kp KP_PLUS
    &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE     
-   &kp LSHFT  &kp F6  &kp F7  &kp F8  &kp F9  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
+   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
                                 &trans &trans &trans   &trans &trans &trans
                         >;
                 };
@@ -55,7 +55,7 @@
 // | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | BSPC |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  .  |  \  | SHFT |
-//                  | LALT | LGUI | SPC |   |     | SPC | BSPC|BSPC |
+//                    | TAB | SPC |     |   |     | SPC | BSPC|BSPC |
                         bindings = <
    &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS  &kp BSPC
    &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
@@ -69,7 +69,7 @@
 // | TAB   |   |      | UP   |       |     |   | S-TAB |  7  |  8  |  9  |  -  | BSPC |
 // | ESC   |   | LEFT | DOWN | RIGHT | TAB |   | TAB   |  4  |  5  |  6  |  +  | /    |
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
-//                  | LALT | SPC | L4/SPC |   | SPC   |  0  | BSPC |
+//                    | TAB | SPC | L4/SPC |   | SPC   |  0  | BSPC |
                         bindings = <
    &kp TAB  &none &none    &kp UP   &none     &none       &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
    &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
@@ -84,7 +84,7 @@
 // | btclr | bt 0 | bt 1  | bt 2 | bt 3 | bt 4  |   |   |     |     |     |     |    |
 // |       |      |       |      |      |       |   |   |     |     |     |     |    |
 // |       |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
-//                          | LALT | LGUI | SPC |   | RET | BSPC | BSPC |
+//                            |     |     |     |   | RET | BSPC | BSPC |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
