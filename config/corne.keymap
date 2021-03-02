@@ -8,7 +8,6 @@
 
 
 / {
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -32,7 +31,7 @@
 //            | LALT | LGUI/SPC| L1/SPC |   | L2/RET | SPC | RCTL |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U       &kp I       &kp O        &kp P          &kp BSPC
-   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &kp H  &hm RSFT J  &hm RGUI K  &hm RCTRL L  &hm RALT SEMI  &kp SQT
+   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LCTRL D  &hm LGUI F  &kp G   &kp H  &hm RGUI J  &hm RCTRL K  &hm RALT L  &hm RSFT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M       &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
                                   &kp LALT &mt LGUI SPACE &lt 1 SPACE   &lt 2 RET &kp SPACE &kp RCTRL
                         >;
