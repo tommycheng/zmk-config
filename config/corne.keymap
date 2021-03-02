@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -28,12 +28,12 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | LSFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSFT |
-//            | LALT | LGUI/SPC| L1/SPC |   | L2/RET | SPC | RCTL |
+//            | LALT | LGUI/SPC| L1/SPC |   | L2/RET | SPC | BKSP |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O        &kp P          &kp BSPC
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI D  &hm LCTRL F  &kp G   &kp H  &hm RCTRL J  &hm RGUI K  &hm RALT L  &hm RSFT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
-                                  &kp LALT &mt LGUI SPACE &lt 1 SPACE   &lt 2 RET &kp SPACE &kp RCTRL
+                                  &kp LALT &mt LGUI SPACE &lt 1 SPACE   &lt 2 RET &kp SPACE &kp BSPC
                         >;
                 };
                 lower_layer {
@@ -46,7 +46,7 @@
    &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp N6    &kp N7    &kp N8     &kp N9     &kp N0       &kp KP_PLUS
    &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE     
    &kp LSHFT  &kp F6  &kp F7  &kp F8  &kp F9  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
-                           &kp LCTRL &kp LGUI &trans   &kp RET &kp SPACE &kp RCTRL
+                           &kp LCTRL &kp LGUI &trans   &kp RET &kp SPACE &kp BSPC
                         >;
                 };
 
@@ -60,7 +60,7 @@
    &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS  &kp BSPC
    &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
    &kp LSHFT &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp DOT   &kp BSLH  &kp RSHFT
-                                &kp LALT &kp LGUI &kp SPACE    &trans &kp SPACE &kp RCTRL
+                                &kp LALT &kp LGUI &kp SPACE    &trans &kp SPACE &kp BSPC
                         >;
                 };
 
@@ -74,7 +74,7 @@
    &kp TAB  &none &none    &kp UP   &none     &none       &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
    &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
    &kp LSHFT &none &none   &none    &none     &none       &kp DOT     &kp N1 &kp N2 &kp N3 &kp ASTRK   &kp RET
-                        &kp LALT &kp LGUI &lt 4 SPACE     &kp SPACE &kp N0 &kp RCTRL
+                        &kp LALT &kp LGUI &lt 4 SPACE     &kp SPACE &kp N0 &kp BSPC
                         >;
                 };
 
@@ -89,7 +89,7 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
    &none  &none &none &none &none &tog 3                                          &none  &none &none &none &none &none
-                    &kp LALT &kp LGUI &trans                                      &kp RET &kp SPACE &kp RCTRL
+                    &kp LALT &kp LGUI &trans                                      &kp RET &kp SPACE &kp BSPC
                         >;
                 };
         };
