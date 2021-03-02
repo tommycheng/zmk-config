@@ -81,15 +81,28 @@
 
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// | btclr | bt 0 | bt 1  | bt 2 | bt 3 | bt 4  |   |   |     |     |     |     |    |
-// |       |      |       |      |      |       |   |   |     |     |     |     |    |
-// |       |      |       |      |      | tog 3 |   |   |     |     |     |     |    |
-//                            |     |     |     |   | RET | BSPC | BSPC |
+// | btclr | bt 0 | bt 1  | bt 2 | bt 3  | bt 4  |   |   |     |     |     |     |    |
+// |       |      |       |      |       |       |   |   |     |     |     |     |    |
+// |       |      |       |      | tog 5 | tog 3 |   |   |     |     |     |     |    |
+//                             |     |     |     |   | RET | BSPC | BSPC |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
-   &none  &none &none &none &none &none                                           &none  &none &none &none &none &none
-   &none  &none &none &none &none &tog 3                                          &none  &none &none &none &none &none
-                    &trans &trans &trans                                          &kp RET &kp BSPC &kp BSPC
+   &none  &none &none &none &none  &none                                           &none  &none &none &none &none &none
+   &none  &none &none &none &tog 5 &tog 3                                          &none  &none &none &none &none &none
+                     &trans &trans &trans                                          &kp RET &kp BSPC &kp BSPC
+                        >;
+                };
+                 workman_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |  =   |
+// |  ESC |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
+// | LSFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | RSFT |
+//                  | tog 4 | SPC| SPC |   | RET | BSPC | BSPC |
+                        bindings = <
+   &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
+   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O  &hm RSFT I     &kp SQT
+   &kp LSHFT  &kp Z       &kp X        &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
+                                      &kp tog 4   &kp SPACE &kp SPACE   &lt 2 RET &kp BSPC &kp BSPC
                         >;
                 };
         };
