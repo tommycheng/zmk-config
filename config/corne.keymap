@@ -6,7 +6,6 @@
 #define CTRL 4
 
 
-
 / {
     behaviors {
         hm: homerow_mods {
@@ -92,6 +91,8 @@
                      &trans &trans &trans                                          &kp RET &kp BSPC &kp BSPC
                         >;
                 };
+
+
                  workman_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |  =   |
@@ -99,10 +100,10 @@
 // | LSFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | RSFT |
 //                  | tog 4 | SPC| SPC |   | RET | BSPC | BSPC |
                         bindings = <
-   &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
+   &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O  &hm RSFT I     &kp SQT
-   &kp LSHFT  &kp Z       &kp X        &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
-                                      &kp tog 4   &kp SPACE &kp SPACE   &lt 2 RET &kp BSPC &kp BSPC
+   &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
+                                      &kp tog 5   &kp SPACE &kp SPACE   &lt 2 RET &kp BSPC &kp BSPC
                         >;
                 };
         };
