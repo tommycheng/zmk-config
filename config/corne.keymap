@@ -87,7 +87,7 @@
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none  &none                                           &none  &none &none &none &none &none
-   &none  &none &none &none &tog 5 &tog 3                                          &none  &none &none &none &none &none
+   &none  &none &none &tog 6 &tog 5 &tog 3                                          &none  &none &none &none &none &none
                      &trans &trans &trans                                          &kp RET &kp BSPC &kp BSPC
                         >;
                 };
@@ -102,6 +102,19 @@
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
    &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
                                          &tog 5   &kp SPACE &kp SPACE   &kp RET &kp BSPC &kp BSPC
+                        >;
+                };
+                 halmak_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  W  |  L  |  R  |  B  |  Z  |   |  ;  |  Q   |  U  |  D  |  J  |  =   |
+// |  ESC |  S  |  H  |  N  |  T  |  ,  |   |  .  |  A   |  E  |  O  |  I  |  '   |
+// | LSFT |  F  |  M  |  V  |  C  |  /  |   |  G  |  P   |  X  |  K  |  Y  | RSFT |
+//                   | tog 6 | SPC| SPC |   | RET | BSPC | BSPC |
+                        bindings = <
+   &kp TAB    &kp W        &kp L       &kp R       &kp B        &kp Z       &kp SEMI  &kp Q        &kp U       &kp D        &kp J         &kp EQUAL
+   &kp ESC    &hm LSHFT S  &hm LALT H  &hm LGUI N  &hm LCTRL T  &kp COMMA   &kp DOT   &hm RCTRL A  &hm RGUI E  &hm RALT O   &hm RSFT I    &kp SQT
+   &kp LSHFT  &kp F        &kp M       &kp V       &kp C        &kp FSLH    &kp G     &kp P        &kp X       &kp K        &kp Y         &kp RSHFT
+                                             &tog 6   &kp SPACE &kp SPACE   &kp RET &kp BSPC &kp BSPC
                         >;
                 };
         };
