@@ -2,8 +2,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define NUMPAD 3
-#define CTRL 4
+#define DEFAULT 0
+#define WMAM 1
+#define NAV0 2
+#define NUM 3
+#define NPAD 4
+#define CTRL 5
+#define HMAK 6
 
 
 / {
@@ -27,29 +32,42 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  =   |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | LSFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSFT |
-//                  | TAB | SPC| L1/SPC |   | L2/RET | BSPC | BSPC |
+//                | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | TG WMAN |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O        &kp P          &kp EQUAL
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI D  &hm LCTRL F  &kp G   &kp H  &hm RCTRL J  &hm RGUI K  &hm RALT L  &hm RSFT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
-                                       &kp TAB  &kp SPACE &lt 1 SPACE   &lt 2 RET &kp BSPC &kp BSPC
+                                    &kp TAB  &kp SPACE &lt NAV0 SPACE   &lt NUM RET &kp BSPC &tog WMAM
                         >;
                 };
-                lower_layer {
+                 workman_layer {
 // -----------------------------------------------------------------------------------------
-// | ~    | F1 | F2 | F3 | F4  | F5    |   | F6   | F7   | F8   | F9    | F10 | +    |
-// | 0    | 1  | 2  | 3  |  4  | 5     |   | LEFT | DOWN | UP   | Right | -   | "|"  |
-// | LSFT | 9  | 8  | 7  |  6  | TG L3 |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
-//                 | TAB | SPC |       |   | RET  | SPC  | BSPC |
+// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |  =   |
+// |  ESC |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
+// | LSFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | RSFT |
+//                | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | TG WMAN |
                         bindings = <
-   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp F10      &kp KP_PLUS
-   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE     
-   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &tog 3   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
-                                &trans &trans &trans   &trans &trans &trans
+   &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
+   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
+   &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
+                                    &kp TAB  &kp SPACE &lt NAV0 SPACE   &lt NUM RET &kp BSPC &tog WMAM
+                        >;
+                };
+                nav0_layer {
+// -----------------------------------------------------------------------------------------
+// | ~    | F1 | F2 | F3 | F4  | F5      |   | F6   | F7   | F8   | F9    | F10 | +    |
+// | 0    | 1  | 2  | 3  |  4  | 5       |   | LEFT | DOWN | UP   | Right | -   | "|"  |
+// | LSFT | 9  | 8  | 7  |  6  | TG NPAD |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
+//                 | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | TG WMAN |
+                        bindings = <
+   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5      &kp F6    &kp F7    &kp F8     &kp F9     &kp F10      &kp KP_PLUS
+   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE
+   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &tog NPAD   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
+                                   &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 
-                raise_layer {
+                num_layer {
 // -----------------------------------------------------------------------------------------
 // | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | =    |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
@@ -63,47 +81,34 @@
                         >;
                 };
 
-                numpad_layer {
+                npad_layer {
 // -----------------------------------------------------------------------------------------
 // | TAB   |   |      | UP   |       |     |   | S-TAB |  7  |  8  |  9  |  -  | BSPC |
 // | ESC   |   | LEFT | DOWN | RIGHT | TAB |   | TAB   |  4  |  5  |  6  |  +  | /    |
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
-//                    | TAB | SPC | L4/SPC |   | SPC   |  0  | BSPC |
+//                  | TAB | SPC | CTRL/SPC |   | SPC   |  0  | BSPC |
                         bindings = <
    &kp TAB  &none &none    &kp UP   &none     &none       &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
    &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB     &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
    &kp LSHFT &none &none   &none    &none     &none       &kp DOT     &kp N1 &kp N2 &kp N3 &kp ASTRK   &kp RET
-                            &trans &trans &lt 4 SPACE     &kp SPACE &kp N0 &kp BSPC
+                         &trans &trans &lt CTRL SPACE     &kp SPACE &kp N0 &kp BSPC
                         >;
                 };
-
 
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// | btclr | bt 0 | bt 1  | bt 2 | bt 3  | bt 4  |   |   |     |     |     |     |    |
-// |       |      |       |      |       |       |   |   |     |     |     |     |    |
-// |       |      |       |      | tog 5 | tog 3 |   |   |     |     |     |     |    |
-//                             |     |     |     |   | RET | BSPC | BSPC |
+// | btclr | bt 0 | bt 1  | bt 2 | bt 3  | bt 4   |   |   |     |     |     |     |    |
+// |       |      |       |      |       |        |   |   |     |     |     |     |    |
+// |       |      |       |      |       | TG NPAD |   |   |     |     |     |     |    |
+//                             |     |     |      |   | RET | BSPC | BSPC |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none  &none &none &none &none &none
    &none  &none &none &none &none  &none                                           &none  &none &none &none &none &none
-   &none  &none &none &tog 6 &tog 5 &tog 3                                          &none  &none &none &none &none &none
+   &none  &none &none &none &none  &tog NPAD                                       &none  &none &none &none &none &none
                      &trans &trans &trans                                          &kp RET &kp BSPC &kp BSPC
                         >;
                 };
-                 workman_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |  =   |
-// |  ESC |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
-// | LSFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | RSFT |
-//                  | tog 4 | SPC| SPC |   | RET | BSPC | BSPC |
-                        bindings = <
-   &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
-   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
-   &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
-                                         &tog 5   &kp SPACE &kp SPACE   &kp RET &kp BSPC &kp BSPC
-                        >;
-                };
+
                  halmak_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  W  |  L  |  R  |  B  |  Z  |   |  ;  |  Q   |  U  |  D  |  J  |  =   |
