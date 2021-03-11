@@ -32,7 +32,7 @@
 // |  TAB |  Q   |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P   |  =   |
 // |  ESC |  A/⇧ |  S/⌥ |  D/⌘ |  F/^ |  G  |   |  H  |  J/^ |  K/⌘ |  L/⌥ |  ;/⇧ |  '   |
 // | LSFT |  Z   |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /   | RSFT |
-//                | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
+//                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O        &kp P          &kp EQUAL
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI D  &hm LCTRL F  &kp G   &kp H  &hm RCTRL J  &hm RGUI K  &hm RALT L  &hm RSFT SEMI  &kp SQT
@@ -45,7 +45,7 @@
 // |  TAB |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |  =   |
 // |  ESC |  A/⇧ |  S/⌥ |  H/⌘ |  T/^ |  G  |   |  Y  |  N/^ |  E/⌘ |  O/⌥ |  I/⇧ |  '   |
 // | LSFT |  Z   |  X   |  M   |  C   |  V  |   |  K  |  L   |  ,   |  .   |  /   | RSFT |
-//                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | TG WMAN |
+//                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
    &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
@@ -58,7 +58,7 @@
 // | TAB   |   |      | UP   |       |     |   | S-TAB |  7  |  8  |  9  |  -  | BSPC |
 // | ESC   |   | LEFT | DOWN | RIGHT | TAB |   | TAB   |  4  |  5  |  6  |  +  | /    |
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
-//                  | TAB | SPC | CTRL/SPC |   | SPC   |  0  | BSPC |
+//                  | TAB | SPC | NAV0/SPC |   | SPC   |  0  | BSPC |
                         bindings = <
    &kp TAB  &none &none    &kp UP   &none     &none     &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
    &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB   &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
@@ -71,7 +71,7 @@
 // | ~    | F1 | F2 | F3 | F4  | F5      |   | F6   | F7   | F8   | F9    | F10 | +    |
 // | 0    | 1  | 2  | 3  |  4  | 5       |   | LEFT | DOWN | UP   | Right | -   | "|"  |
 // | LSFT | 9  | 8  | 7  |  6  |         |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
-//                 | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | TG WMAN |
+//                 | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5      &kp F6    &kp F7    &kp F8     &kp F9     &kp F10      &kp KP_PLUS
    &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE
@@ -84,7 +84,7 @@
 // | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | =    |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  .  |  \  | SHFT |
-//                    | TAB | SPC |     |   |     | SPC | BSPC|BSPC |
+//               | TAB | SPC | NAV0/SPC |   |     | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS  &kp EQUAL
    &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
@@ -97,7 +97,7 @@
 // | btclr | bt 0 | bt 1  | bt 2 | bt 3    | bt 4    |   |   |     |     |     |     |    |
 // |       |      |       |      |         |         |   |   |     |     |     |     |    |
 // |       |      |       |      | TG WMAN | TG NPAD |   |   |     |     |     |     |    |
-//                               |     |     |       |   | RET | BSPC | BSPC |
+//                            | TAB | SPC | NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none &none
    &none  &none &none &none &none      &none                                     &none  &none &none &none &none &none
