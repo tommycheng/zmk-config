@@ -51,7 +51,7 @@
    &kp ESC    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &kp EQUAL
    &kp TAB    &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RGUI K &hm RCTRL L  &hm RALT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &hm LGUI X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LGUI DOT &kp FSLH       &kp RSHFT
-                                            &kp ESC  &kp SPACE &trans   &trans &kp BSPC &trans
+                                              &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
                 workman_layer {
@@ -108,9 +108,9 @@
                 };
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// | btclr | bt 0 | bt 1  | bt 2 | bt 3    | bt 4    |   |   |     |     |     |     |    |
-// |       |      |       |      |         |         |   |   |     |     |     |     |    |
-// |       |      |       |      | TG WMAN | TG NPAD |   |   |     |     |     |     |    |
+// | btclr | bt 0 | bt 1  | bt 2    | bt 3    | bt 4    |   |   |     |     |     |     |    |
+// |       |      |       |         |         |         |   |   |     |     |     |     |    |
+// |       |      |       | TG QWTY | TG WMAN | TG NPAD |   |   |     |     |     |     |    |
 //                            | TAB | SPC | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none &none
