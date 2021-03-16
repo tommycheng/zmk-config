@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <160>;
             quick_tap_ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -38,7 +38,7 @@
    &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T   &kp Y  &kp U  &kp I &kp O  &kp P     &kp BSPC
    &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G   &kp H  &kp J  &kp K &kp L  &kp SEMI  &kp SQT
    &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &kp N  &kp M  &kp COMMA    &kp DOT   &kp FSLH  &kp RSHFT
-        &kp LGUI  &mt LALT SPACE &lt NAV0 SPACE   &lt NUM RET &mt RCTRL BSPC &lt CTRL DELETE
+        &kp LCMD  &mt LALT SPACE &lt NAV0 SPACE   &lt NUM RET &mt RCTRL BSPC &lt CTRL DELETE
                         >;
                 };
                 qwerty_layer {
@@ -49,8 +49,8 @@
 //                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp ESC    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &kp EQUAL
-   &kp TAB    &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RGUI K &hm RCTRL L  &hm RALT SEMI  &kp SQT
-   &kp LSHFT  &kp Z       &hm LGUI X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LGUI DOT &kp FSLH       &kp RSHFT
+   &kp TAB    &hm LALT A  &hm LCTRL S  &hm LCMD D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RCMD K &hm RCTRL L  &hm RALT SEMI  &kp SQT
+   &kp LSHFT  &kp Z       &hm LCMD X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LCMD DOT &kp FSLH       &kp RSHFT
                                               &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
@@ -62,8 +62,8 @@
 //                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
-   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LGUI H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RGUI E  &hm RCTRL O  &hm RALT I    &kp SQT
-   &kp LSHFT  &kp Z       &hm LGUI X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LGUI DOT &kp FSLH      &kp RSHFT
+   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &kp SQT
+   &kp LSHFT  &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &kp RSHFT
                                               &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
@@ -127,7 +127,7 @@
 //                   | tog 6 | SPC| SPC |   | RET | BSPC | BSPC |
                         bindings = <
    &kp TAB    &kp W        &kp L       &kp R       &kp B        &kp Z       &kp SEMI  &kp Q        &kp U       &kp D        &kp J         &kp EQUAL
-   &kp ESC    &hm LSHFT S  &hm LALT H  &hm LGUI N  &hm LCTRL T  &kp COMMA   &kp DOT   &hm RCTRL A  &hm RGUI E  &hm RALT O   &hm RSFT I    &kp SQT
+   &kp ESC    &hm LSHFT S  &hm LALT H  &hm LCMD N  &hm LCTRL T  &kp COMMA   &kp DOT   &hm RCTRL A  &hm RCMD E  &hm RALT O   &hm RSFT I    &kp SQT
    &kp LSHFT  &kp F        &kp M       &kp V       &kp C        &kp FSLH    &kp G     &kp P        &kp X       &kp K        &kp Y         &kp RSHFT
                                              &tog 6   &kp SPACE &kp SPACE   &kp RET &kp BSPC &kp BSPC
                         >;
