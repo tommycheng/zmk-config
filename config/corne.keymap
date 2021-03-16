@@ -31,12 +31,12 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q   |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P   | BSPC |
-// |  TAB |  A/⌥ |  S/⌘ |  D/^ |  F/⇧ |  G  |   |  H  |  J/⇧ |  K/^ |  L/⌘ |  ;/⌥ |  '   |
+// |  TAB |  A/⌥ |  S/^ |  D/⌘ |  F/⇧ |  G  |   |  H  |  J/⇧ |  K/⌘ |  L/^ |  ;/⌥ |  '   |
 // | LSFT |  Z   |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /   | RSFT |
 //                   | LGUI | SPC| NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp ESC    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O       &kp P          &kp BSPC
-   &kp TAB    &hm LALT A  &hm LGUI S  &hm LCTRL D  &hm LSHFT F  &kp G   &kp H  &hm RSFT J   &hm RCTRL K &hm RGUI L  &hm RALT SEMI  &kp SQT
+   &kp TAB    &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RGUI K &hm RCTRL L  &hm RALT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT     &kp FSLH       &kp RSHFT
                               &kp LGUI  &mt LALT SPACE &lt NAV0 SPACE   &lt NUM RET &kp BSPC &lt CTRL DEL
                         >;
@@ -44,25 +44,25 @@
                 qwerty_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q   |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P   |  =   |
-// |  ESC |  A/⌥ |  S/⌘ |  D/^ |  F/⇧ |  G  |   |  H  |  J/⇧ |  K/^ |  L/⌘ |  ;/⌥ |  '   |
+// |  ESC |  A/⌥ |  S/^ |  D/⌘ |  F/⇧ |  G  |   |  H  |  J/⇧ |  K/⌘ |  L/^ |  ;/⌥ |  '   |
 // | LSFT |  Z   |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /   | RSFT |
 //                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I       &kp O       &kp P          &kp EQUAL
-   &kp TAB    &hm LALT A  &hm LGUI S  &hm LCTRL D  &hm LSHFT F  &kp G   &kp H  &hm RSFT J   &hm RCTRL K &hm RGUI L  &hm RALT SEMI  &kp SQT
-   &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT     &kp FSLH      &kp RSHFT
+   &kp TAB    &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RGUI K &hm RCTRL L  &hm RALT SEMI  &kp SQT
+   &kp LSHFT  &kp Z       &kp X        &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA   &kp DOT     &kp FSLH       &kp RSHFT
                                             &kp ESC  &kp SPACE &trans   &trans &trans &trans
                         >;
                 };
                  workman_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |  =   |
-// |  ESC |  A/⌥ |  S/⌘ |  H/^ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/^ |  O/⌘ |  I/⌥ |  '   |
+// |  ESC |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ |  '   |
 // | LSFT |  Z   |  X   |  M   |  C   |  V  |   |  K  |  L   |  ,   |  .   |  /   | RSFT |
 //                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
-   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
+   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LGUI H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RGUI E  &hm RCTRL O  &hm RALT I    &kp SQT
    &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
                                                  &trans &trans &trans   &trans &trans &trans
                         >;
