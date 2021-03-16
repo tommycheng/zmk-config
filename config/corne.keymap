@@ -64,7 +64,7 @@
    &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
    &kp ESC    &hm LALT A  &hm LCTRL S  &hm LGUI H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RGUI E  &hm RCTRL O  &hm RALT I    &kp SQT
    &kp LSHFT  &kp Z       &hm LGUI X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LGUI DOT &kp FSLH      &kp RSHFT
-                                                 &trans &trans &trans   &trans &trans &trans
+                                              &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
                 npad_layer {
