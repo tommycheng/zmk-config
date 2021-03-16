@@ -57,12 +57,12 @@
                 workman_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |  =   |
-// |  ESC |  A/⇧ |  S/⌥ |  H/⌘ |  T/^ |  G  |   |  Y  |  N/^ |  E/⌘ |  O/⌥ |  I/⇧ |  '   |
+// |  ESC |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ |  '   |
 // | LSFT |  Z   |  X   |  M   |  C   |  V  |   |  K  |  L   |  ,   |  .   |  /   | RSFT |
 //                    | TAB | SPC| NAV0/SPC |   | NUM/RET | BSPC | MO CTRL |
                         bindings = <
    &kp TAB    &kp Q        &kp D       &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
-   &kp ESC    &hm LSHFT A  &hm LALT S  &hm LGUI H  &hm LCTRL T  &kp G   &kp Y  &hm RCTRL N  &hm RGUI E  &hm RALT O   &hm RSFT I     &kp SQT
+   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LGUI H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RGUI E  &hm RCTRL O  &hm RALT I    &kp SQT
    &kp LSHFT  &kp Z        &kp X       &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &kp DOT      &kp FSLH      &kp RSHFT
                                                  &trans &trans &trans   &trans &trans &trans
                         >;
