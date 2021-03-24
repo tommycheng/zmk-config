@@ -51,7 +51,7 @@
    &kp ESC    &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &kp EQUAL
    &kp TAB    &hm LALT A  &hm LCTRL S  &hm LCMD D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RCMD K &hm RCTRL L  &hm RALT SEMI  &kp SQT
    &kp LSHFT  &kp Z       &hm LCMD X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LCMD DOT &kp FSLH       &kp RSHFT
-                                              &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
+                                         &kp ESC  &lt NPAD TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
                 workman_layer {
@@ -64,7 +64,7 @@
    &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp EQUAL
    &kp ESC    &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &kp SQT
    &kp LSHFT  &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &kp RSHFT
-                                              &kp ESC  &kp TAB &trans   &trans &kp BSPC &trans
+                                         &kp ESC  &lt NPAD TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
                 npad_layer {
