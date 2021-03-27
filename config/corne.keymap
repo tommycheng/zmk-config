@@ -72,12 +72,12 @@
 // | TAB   |   |      | UP   |       |     |   | S-TAB |  7  |  8  |  9  |  -  | BSPC |
 // | ESC   |   | LEFT | DOWN | RIGHT | TAB |   | TAB   |  4  |  5  |  6  |  +  | /    |
 // | LSFT  |   |      |      |       |     |   | .     |  1  |  2  |  3  |  *  | RET  |
-//                  | TAB | SPC | NAV0/SPC |   | SPC   |  0  | CTRL/DEL |
+//                  | TAB | SPC | NAV0/SPC |   | SPC   |  0  | CTRL/BSPC |
                         bindings = <
    &kp TAB  &none &none    &kp UP   &none     &none     &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp MINUS   &kp BSPC
    &kp ESC  &none &kp LEFT &kp DOWN &kp RIGHT &kp TAB   &kp TAB     &kp N4 &kp N5 &kp N6 &kp PLUS    &kp FSLH
    &kp LSHFT &none &none   &none    &none     &none     &kp DOT     &kp N1 &kp N2 &kp N3 &kp ASTRK   &kp RET
-                                 &trans &trans &trans   &kp SPACE &kp N0 &trans
+                                 &trans &trans &trans   &kp SPACE &kp N0 &lt CTRL BSPC
                         >;
                 };
                 nav0_layer {
