@@ -56,65 +56,65 @@
                 };
                 workman_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |      |
-// |  ESC |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ |      |
-// | LSFT |  Z   |  X/⌘ |  M   |  C   |  V  |   |  K  |  L   |  ,   |  ./⌘ |  /   |      |
+// |      |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |      |
+// |      |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ |      |
+// |      |  Z   |  X/⌘ |  M   |  C   |  V  |   |  K  |  L   |  ,   |  ./⌘ |  /   |      |
 //              | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp TAB    &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &none
-   &kp ESC    &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &none
-   &kp LSHFT  &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &none
+   &none   &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &none
+   &none   &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &none
+   &none   &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &none
                                          &kp ESC  &lt NPAD TAB &trans   &trans &kp BSPC &trans
                         >;
                 };
                 npad_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |   |        | UP     |         |     |   | S-TAB   |  7    |  8  |  9  |  +  |      |
-// | ESC   | ⌥ | LEFT/^ | DOWN/⌘ | RIGHT/⇧ | TAB |   | TAB     |  4/⇧  |  5  |  6  |  -  |      |
-// | LSFT  |   |        |        |         |     |   | .       |  1    |  2  |  3  |  *  |      |
+// |       |   |        | UP     |         |     |   | S-TAB   |  7    |  8  |  9  |  +  |      |
+// |       | ⌥ | LEFT/^ | DOWN/⌘ | RIGHT/⇧ | TAB |   | TAB     |  4/⇧  |  5  |  6  |  -  |      |
+// |       |   |        |        |         |     |   | .       |  1    |  2  |  3  |  *  |      |
 //                   | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET |  0  | CTRL/BSPC |
                         bindings = <
-   &kp TAB   &none    &none          &kp UP        &none           &none     &kp LS(TAB) &kp N7       &kp N8 &kp N9 &kp PLUS    &none
-   &kp ESC   &kp LALT &hm LCTRL LEFT &hm LCMD DOWN &hm LSHFT RIGHT &kp TAB   &kp TAB     &hm LSHFT N4 &kp N5 &kp N6 &kp MINUS   &none
-   &kp LSHFT &none    &none          &none         &none           &none     &kp DOT     &kp N1       &kp N2 &kp N3 &kp ASTRK   &none
+   &none   &none    &none          &kp UP        &none           &none     &kp LS(TAB) &kp N7       &kp N8 &kp N9 &kp PLUS    &none
+   &none   &kp LALT &hm LCTRL LEFT &hm LCMD DOWN &hm LSHFT RIGHT &kp TAB   &kp TAB     &hm LSHFT N4 &kp N5 &kp N6 &kp MINUS   &none
+   &none   &none    &none          &none         &none           &none     &kp DOT     &kp N1       &kp N2 &kp N3 &kp ASTRK   &none
                                                       &trans &trans &trans   &trans &kp N0 &lt CTRL BSPC
                         >;
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// | ~    | F1   | F2   | F3   | F4    | F5      |   | F6   | F7   | F8   | F9    | '   |      |
-// | 0    | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5       |   | LEFT | DOWN | UP   | Right | -   |      |
-// | LSFT | 9    | 8    | 7    |  6    |         |   | HOME | END  | PGUP | PGDN  | "|" |      |
+// | `    | F1   | F2   | F3   | F4    | F5      |   | F6   | F7   | F8   | F9    | '   |      |
+// | ~    | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5       |   | LEFT | DOWN | UP   | Right | -   |      |
+// |      | 9    | 8    | 7    |  6    |         |   | HOME | END  | PGUP | PGDN  | "|" |      |
 //           | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp TILDE  &kp F1       &kp F2        &kp F3       &kp F4        &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &none
-   &kp N0     &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
-   &kp LSHFT  &kp N9       &kp N8        &kp N7       &kp N6        &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
+   &kp GRAVE  &kp F1       &kp F2        &kp F3       &kp F4        &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &none
+   &kp TILDE     &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
+   &none  &kp N9       &kp N8        &kp N7       &kp N6        &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
                                                       &trans &trans &trans   &lt NUM RET &kp BSPC &lt CTRL DEL
                         >;
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  |      |
-// | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  \  |  /  |      |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  |      |
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
+// |      |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  \  |  /  |      |
 //          | ESC | NPAD TAB | NAV0/SPC |   |     | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
-   &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
-   &kp LSHFT &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
+   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
+   &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
+   &none &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
                                        &trans &trans &trans    &trans &trans &trans
                         >;
                 };
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// | btclr | bt 0 | bt 1  | bt 2    | bt 3    | bt 4    |   |   |     |     |     |     |    |
-// |       |      |       |         |         |         |   |   |     |     |     |     |    |
+// |       | bt 0 | bt 1  | bt 2    | bt 3    | bt 4    |   |   |     |     |     |     |    |
+// |       | btclr|       |         |         |         |   |   |     |     |     |     |    |
 // |       |      |       | TG QWTY | TG WMAN | TG NPAD |   |   |     |     |     |     |    |
 //                          | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none &none
-   &none  &none &none &none &none      &none                                     &none  &none &none &none &none &none
+   &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none &none
+   &none  &bt BT_CLR &none &none &none      &none                                     &none  &none &none &none &none &none
    &none  &none &none &tog QWTY &tog WMAN  &tog NPAD                             &none  &none &none &none &none &none
                         &trans &trans &trans                                     &trans &trans &trans
                         >;
