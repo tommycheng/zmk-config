@@ -69,28 +69,28 @@
                 };
                 npad_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |   |        | UP     |         |     |   | S-TAB   |  7  |  8  |  9  |  +  | BSPC |
-// | ESC   | ⌥ | LEFT/^ | DOWN/⌘ | RIGHT/⇧ | TAB |   | TAB     |  4  |  5  |  6  |  -  | /    |
-// | LSFT  |   |        |        |         |     |   | .       |  1  |  2  |  3  |  *  | RET  |
+// | TAB   |   |        | UP     |         |     |   | S-TAB   |  7    |  8  |  9  |  +  | BSPC |
+// | ESC   | ⌥ | LEFT/^ | DOWN/⌘ | RIGHT/⇧ | TAB |   | TAB     |  4/⇧  |  5  |  6  |  -  | /    |
+// | LSFT  |   |        |        |         |     |   | .       |  1    |  2  |  3  |  *  | RET  |
 //                   | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET |  0  | CTRL/BSPC |
                         bindings = <
-   &kp TAB   &none    &none          &kp UP        &none           &none     &kp LS(TAB) &kp N7 &kp N8 &kp N9 &kp PLUS    &kp BSPC
-   &kp ESC   &kp LALT &hm LCTRL LEFT &hm LCMD DOWN &hm LSHFT RIGHT &kp TAB   &kp TAB     &kp N4 &kp N5 &kp N6 &kp MINUS   &kp FSLH
-   &kp LSHFT &none    &none          &none         &none           &none     &kp DOT     &kp N1 &kp N2 &kp N3 &kp ASTRK   &kp RET
+   &kp TAB   &none    &none          &kp UP        &none           &none     &kp LS(TAB) &kp N7       &kp N8 &kp N9 &kp PLUS    &kp BSPC
+   &kp ESC   &kp LALT &hm LCTRL LEFT &hm LCMD DOWN &hm LSHFT RIGHT &kp TAB   &kp TAB     &hm LSHFT N4 &kp N5 &kp N6 &kp MINUS   &kp FSLH
+   &kp LSHFT &none    &none          &none         &none           &none     &kp DOT     &kp N1       &kp N2 &kp N3 &kp ASTRK   &kp RET
                                                       &trans &trans &trans   &trans &kp N0 &lt CTRL BSPC
                         >;
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// | ~    | F1 | F2 | F3 | F4  | F5      |   | F6   | F7   | F8   | F9    | '   | +    |
-// | 0    | 1  | 2  | 3  |  4  | 5       |   | LEFT | DOWN | UP   | Right | -   | =    |
-// | LSFT | 9  | 8  | 7  |  6  |         |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
+// | ~    | F1   | F2   | F3   | F4    | F5      |   | F6   | F7   | F8   | F9    | '   | +    |
+// | 0    | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5       |   | LEFT | DOWN | UP   | Right | -   | =    |
+// | LSFT | 9    | 8    | 7    |  6    |         |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
 //           | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &kp KP_PLUS
-   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp EQUAL
-   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &kp RSHFT
-                                &trans &trans &trans   &lt NUM RET &kp BSPC &lt CTRL DEL
+   &kp TILDE  &kp F1       &kp F2        &kp F3       &kp F4        &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &kp KP_PLUS
+   &kp N0     &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp EQUAL
+   &kp LSHFT  &kp N9       &kp N8        &kp N7       &kp N6        &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &kp RSHFT
+                                                      &trans &trans &trans   &lt NUM RET &kp BSPC &lt CTRL DEL
                         >;
                 };
                 num_layer {
