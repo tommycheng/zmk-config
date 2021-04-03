@@ -82,25 +82,25 @@
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// | ~    | F1 | F2 | F3 | F4  | F5      |   | F6   | F7   | F8   | F9    | F10 | +    |
-// | 0    | 1  | 2  | 3  |  4  | 5       |   | LEFT | DOWN | UP   | Right | -   | "|"  |
-// | LSFT | 9  | 8  | 7  |  6  |         |   | HOME | END  | PGUP | PGDN  | =   | SHFT |
+// | ~    | F1 | F2 | F3 | F4  | F5      |   | F6   | F7   | F8   | F9    | '   | +    |
+// | 0    | 1  | 2  | 3  |  4  | 5       |   | LEFT | DOWN | UP   | Right | -   | =    |
+// | LSFT | 9  | 8  | 7  |  6  |         |   | HOME | END  | PGUP | PGDN  | "|" | SHFT |
 //           | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp F10      &kp KP_PLUS
-   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp PIPE
-   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp EQUAL    &kp RSHFT
+   &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &kp KP_PLUS
+   &kp N0     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &kp EQUAL
+   &kp LSHFT  &kp N9  &kp N8  &kp N7  &kp N6  &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &kp RSHFT
                                 &trans &trans &trans   &lt NUM RET &kp BSPC &lt CTRL DEL
                         >;
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | =    |
+// | `    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  | +    |
 // | ~    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | =    |
 // | LSFT |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  \  |  /  | SHFT |
 //          | ESC | NPAD TAB | NAV0/SPC |   |     | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS  &kp EQUAL
+   &kp GRAVE  &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &kp KP_PLUS
    &kp TILDE &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
    &kp LSHFT &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &kp RSHFT
                                        &trans &trans &trans    &trans &trans &trans
