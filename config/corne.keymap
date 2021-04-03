@@ -7,9 +7,10 @@
 #define WMAN 2
 #define NPAD 3
 #define NAV0 4
-#define NUM 5
-#define CTRL 6
-#define HMAK 7
+#define NUM  5
+#define NROW 6
+#define CTRL 7
+#define HMAK 8
 
 
 / {
@@ -95,17 +96,30 @@
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
+// |      |  !  |  @  |  #  |  $  |  %  |   | [   |  7    |  8  |  9  |  ]   |    |
+// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   | ;   |  4/⇧  |  5  |  6  |  =   |    |
+// |      |     |     |     |     |     |   | .   |  1    |  2  |  3  |  "|" |    |
+//          | ESC | NPAD TAB | NAV0/SPC |   | - |  0  | ` |
+                        bindings = <
+   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT     &kp LBKT    &kp N7       &kp N8 &kp N9 &kp RBKT    &none
+   &none &kp LALT N1  &kp LCTRL &kp LCMD &kp LSHFT &none    &kp TAB     &hm LSHFT N4 &kp N5 &kp N6 &kp EQUAL   &none
+   &none &none &none &none &none  &none                     &kp DOT     &kp N1       &kp N2 &kp N3 &kp PIPE    &none
+                                    &trans &trans &trans    &kp MINUS &kp N0 &kp GRAVE
+                        >;
+                };
+                nrow_layer {
+// -----------------------------------------------------------------------------------------
 // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  |      |
 // |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
 // |      |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  \  |  /  |      |
-//          | ESC | NPAD TAB | NAV0/SPC |   |     | NUM/RET | BSPC | CTRL/DEL |
+//          | ESC | NPAD TAB | NAV0/SPC |   |     | NROW/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
+   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
    &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
    &none &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
-                                       &trans &trans &trans    &trans &trans &trans
+                                   &trans &trans &trans    &lt NROW RET &kp N0 &lt CTRL BSPC
                         >;
-                };
+                }; 
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
 // |       | bt 0 | bt 1  | bt 2    | bt 3    | bt 4    |   |   |     |     |     |     |    |
