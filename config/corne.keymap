@@ -56,13 +56,13 @@
                 };
                 workman_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   |      |
-// |      |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ |      |
-// |      |  Z   |  X/⌘ |  M   |  C   |  V  |   |  K  |  L   |  ,   |  ./⌘ |  /   |      |
+// |      |  Q   |  D   |  R   |  W   |  B  |   |  J  |  F   |  U   |  P   |  ;   | VOL UP |
+// |      |  A/⌥ |  S/^ |  H/⌘ |  T/⇧ |  G  |   |  Y  |  N/⇧ |  E/⌘ |  O/^ |  I/⌥ | VOL DN |
+// |      |  Z   |  X/⌘ |  M   |  C   |  V  |   |  K  |  L   |  ,   |  ./⌘ |  /   |        |
 //              | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none   &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &none
-   &none   &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &none
+   &none   &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SEMI      &kp C_VOL_UP
+   &none   &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &kp C_VOL_DN
    &none   &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &none
                                          &kp ESC  &lt NPAD TAB &trans   &trans &kp BSPC &trans
                         >;
