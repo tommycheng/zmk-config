@@ -9,7 +9,8 @@
 #define NAV0 4
 #define NUM  5
 #define NROW 6
-#define CTRL 7
+#define SYM  7
+#define CTRL 8
 
 
 / {
@@ -95,9 +96,9 @@
                 };
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |   | [   |  7    |  8  |  9  |  ]  |    |
-// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   | ;   |  4/⇧  |  5  |  6  |  -  |    |
-// |      |     |     |     |     |     |   | .   |  1    |  2  |  3  |  \  |    |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  [  |  7   |  8  |  9  |  ]  |    |
+// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   |  ;  |  4/⇧ |  5  |  6  |  -  |    |
+// |      |     |     |     |     |     |   |  .  |  1   |  2  |  3  |  \  |    |
 //           | ESC | NUM TAB | NAV0/SPC |   | = |  0  | ` |
                         bindings = <
    &none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT   &kp LBKT    &kp N7       &kp N8 &kp N9 &kp RBKT    &none
@@ -117,6 +118,19 @@
    &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
    &none &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
                                    &trans &trans &trans    &kp RET &kp N0 &lt CTRL BSPC
+                        >;
+                };
+                sym_layer {
+// -----------------------------------------------------------------------------------------
+// |      |  !  |  @  |  #  |  $  |  %  |   | [  |  &  |  *  |  )  |  ]  |    |
+// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   | ;  | $/⇧ |  %  |  ^  |  -  |    |
+// |      |     |     |     |     |     |   | .  |  !  |  @  |  #  |  \  |    |
+//           | ESC | NUM TAB | NAV0/SPC |   | (  |  )  | ~ |
+                        bindings = <
+   &none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT   &kp LBKT    &kp AMPS        &kp ASTRK  &kp LPAR  &kp RBKT   &none
+   &none  &kp LALT  &kp LCTRL  &kp LCMD  &kp LSHFT &none       &kp SEMI    &hm RSHFT DLLR  &kp PRCNT  &kp CARET &kp MINUS  &none
+   &none  &none     &none      &none     &none     &none       &kp DOT     &kp EXCL        &kp AT     &kp HASH  &kp BSLH   &none
+                                       &trans &trans &trans    &kp LPAR    &kp RPAR &kp TILDE
                         >;
                 }; 
                 ctrl_layer {
