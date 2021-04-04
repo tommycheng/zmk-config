@@ -85,12 +85,12 @@
 // |      |      |      |      |       |      |   |      |      |      |       |     |      |
 // |      | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5    |   | LEFT | DOWN | UP   | Right | -   |      |
 // |      | 0    | 9    | 8    |  7    | 6    |   | HOME | END  | PGUP | PGDN  | "|" |      |
-//                 | ESC | NUM TAB | NAV0/SPC |   | NROW/RET | BSPC | CTRL/DEL |
+//                 | ESC | NUM TAB | NAV0/SPC |   | RET | BSPC | DEL |
                         bindings = <
    &none  &none        &none         &none        &none         &none    &none     &none     &none      &none      &none        &none
    &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
    &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
-                                                  &trans &trans &trans   &lt NROW RET &kp BSPC &lt CTRL DEL
+                                                  &trans &trans &trans   &kp RET &kp BSPC &kp DEL
                         >;
                 };
                 num_layer {
@@ -124,12 +124,12 @@
 // |    | F12 | F7 | F8 | F9 |    |   | bt 0    | bt 1    | bt 2    | bt 3 | btclr |   |
 // |    | F11 | F4 | F5 | F6 |    |   |         |  ⇧      |  ⌘      |  ^   |   ⌥   |   |
 // |    | F10 | F1 | F2 | F3 |    |   | TG QWTY | TG WMAN | TG NPAD |      |       |   |
-//   | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
+//              | ESC | TAB | SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &none &kp F12 &kp F7 &kp F8 &kp F9 &none   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none
    &none &kp F11 &kp F4 &kp F5 &kp F6 &none   &none        &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
    &none &kp F10 &kp F1 &kp F2 &kp F3 &none   &tog QWTY    &tog WMAN    &tog NPAD    &none        &none      &none
-                       &trans &trans &trans   &trans &trans &trans
+                  &kp ESC &kp TAB &kp SPACE   &trans &trans &trans
                         >;
                 };
         };
