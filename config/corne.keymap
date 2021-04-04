@@ -89,8 +89,8 @@
 //           | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
    &kp GRAVE  &kp F1       &kp F2        &kp F3       &kp F4        &kp F5   &kp F6    &kp F7    &kp F8     &kp F9     &kp SQT      &none
-   &kp TILDE     &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
-   &none  &kp N9       &kp N8        &kp N7       &kp N6        &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
+   &kp TILDE  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
+   &none  &kp N9       &kp N8        &kp N7       &kp N6            &none    &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
                                                       &trans &trans &trans   &lt NUM RET &kp BSPC &lt CTRL DEL
                         >;
                 };
@@ -101,10 +101,10 @@
 // |      |     |     |     |     |     |   | .   |  1    |  2  |  3  |  "|" |    |
 //          | ESC | NPAD TAB | NAV0/SPC |   | - |  0  | ` |
                         bindings = <
-   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT     &kp LBKT    &kp N7       &kp N8 &kp N9 &kp RBKT    &none
-   &none &kp LALT N1  &kp LCTRL &kp LCMD &kp LSHFT &none    &kp TAB     &hm LSHFT N4 &kp N5 &kp N6 &kp EQUAL   &none
-   &none &none &none &none &none  &none                     &kp DOT     &kp N1       &kp N2 &kp N3 &kp PIPE    &none
-                                    &trans &trans &trans    &kp MINUS &kp N0 &kp GRAVE
+   &none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT   &kp LBKT    &kp N7       &kp N8 &kp N9 &kp RBKT    &none
+   &none  &kp LALT  &kp LCTRL  &kp LCMD  &kp LSHFT &none       &kp SEMI    &hm RSHFT N4 &kp N5 &kp N6 &kp EQUAL   &none
+   &none  &none     &none      &none     &none     &none       &kp DOT     &kp N1       &kp N2 &kp N3 &kp PIPE    &none
+                                      &trans &trans &trans    &kp MINUS &kp N0 &kp GRAVE
                         >;
                 };
                 nrow_layer {
@@ -114,7 +114,7 @@
 // |      |  -  |  +  |  {  |  [  |  (  |   |  )  |  ]  |  }  |  \  |  /  |      |
 //          | ESC | NPAD TAB | NAV0/SPC |   |     | NROW/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
+   &none &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
    &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
    &none &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
                                    &trans &trans &trans    &lt NROW RET &kp N0 &lt CTRL BSPC
