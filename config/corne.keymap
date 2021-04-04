@@ -10,7 +10,6 @@
 #define NUM  5
 #define NROW 6
 #define CTRL 7
-#define HMAK 8
 
 
 / {
@@ -117,33 +116,20 @@
    &none &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
    &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
    &none &kp MINUS &kp PLUS &kp LBRC &kp LBKT  &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC  &kp BSLH  &kp FSLH  &none
-                                   &trans &trans &trans    &lt NROW RET &kp N0 &lt CTRL BSPC
+                                   &trans &trans &trans    &kp RET &kp N0 &lt CTRL BSPC
                         >;
                 }; 
                 ctrl_layer {
 // -----------------------------------------------------------------------------------------
-// |       | bt 0 | bt 1  | bt 2    | bt 3    | bt 4    |   |   |     |     |     |     |    |
-// |       | btclr|       |         |         |         |   |   |     |     |     |     |    |
-// |       |      |       | TG QWTY | TG WMAN | TG NPAD |   |   |     |     |     |     |    |
-//                          | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
+// |    |    |    |    |    |    |   | bt 0    | bt 1    | bt 2    | bt 3 | btclr |   |
+// |    |    |    |    |    |    |   |         |  ⇧      |  ⌘      |  ^   |   ⌥   |   |
+// |    |    |    |    |    |    |   | TG QWTY | TG WMAN | TG NPAD |      |       |   |
+//   | ESC | NPAD TAB | NAV0/SPC |   | NUM/RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none &none
-   &none  &bt BT_CLR &none &none &none      &none                                     &none  &none &none &none &none &none
-   &none  &none &none &tog QWTY &tog WMAN  &tog NPAD                             &none  &none &none &none &none &none
-                        &trans &trans &trans                                     &trans &trans &trans
-                        >;
-                };
-                 halmak_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  W  |  L  |  R  |  B  |  Z  |   |  ;  |  Q   |  U  |  D  |  J  |  =   |
-// |  ESC |  S  |  H  |  N  |  T  |  ,  |   |  .  |  A   |  E  |  O  |  I  |  '   |
-// | LSFT |  F  |  M  |  V  |  C  |  /  |   |  G  |  P   |  X  |  K  |  Y  | RSFT |
-//                  | tog 6 | tab | SPC |   | RET | BSPC | BSPC |
-                        bindings = <
-   &kp TAB    &kp W        &kp L       &kp R       &kp B        &kp Z       &kp SEMI  &kp Q        &kp U       &kp D        &kp J         &kp EQUAL
-   &kp ESC    &hm LSHFT S  &hm LALT H  &hm LCMD N  &hm LCTRL T  &kp COMMA   &kp DOT   &hm RCTRL A  &hm RCMD E  &hm RALT O   &hm RSFT I    &kp SQT
-   &kp LSHFT  &kp F        &kp M       &kp V       &kp C        &kp FSLH    &kp G     &kp P        &kp X       &kp K        &kp Y         &kp RSHFT
-                                               &tog 6   &kp TAB &kp SPACE   &kp RET &kp BSPC &kp BSPC
+   &none  &none &none &none &none &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none
+   &none  &none &none &none &none &none     &none        &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
+   &none  &none &none &none &none &none     &tog QWTY    &tog WMAN    &tog NPAD    &none        &none      &none
+                   &trans &trans &trans     &trans &trans &trans
                         >;
                 };
         };
