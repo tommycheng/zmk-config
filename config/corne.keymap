@@ -49,8 +49,8 @@
 // |    |  Z   |  X/⌘ |  C   |  V   |  B  |   |  N  |  M   |  ,   |  ./⌘ |  /   |     |
 //           | SYM ESC | NUM TAB | NAV0/SPC |   | RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none  &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &none
-   &none  &hm LALT A  &hm LCTRL S  &hm LCMD D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RCMD K &hm RCTRL L  &hm RALT SQT   &none
+   &none  &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &kp C_VOL_UP
+   &none  &hm LALT A  &hm LCTRL S  &hm LCMD D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RCMD K &hm RCTRL L  &hm RALT SQT   &kp C_VOL_DN
    &none  &kp Z       &hm LCMD X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LCMD DOT &kp FSLH       &none
                                   &lt SYM ESC  &lt NUM TAB &trans   &kp RET &kp BSPC &trans
                         >;
@@ -122,13 +122,13 @@
                 };
                 sym_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |   | [  |  &  |  *  |  )  |  ]  |    |
-// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   | ;  | $/⇧ |  %  |  ^  |  -  |    |
+// |      |  !  |  @  |  #  |  $  |  %  |   | {  |  &  |  *  |  +  |  }  |    |
+// |      |  ⌥  |  ^  |  ⌘  |  ⇧  |     |   | :  | $/⇧ |  %  |  ^  |  _  |    |
 // |      |     |     |     |     |     |   | .  |  !  |  @  |  #  |  \  |    |
 //       | SYM ESC | NUM TAB | NAV0/SPC |   | (  |  )  | ~ |
                         bindings = <
-   &none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT   &kp LBKT    &kp AMPS        &kp ASTRK  &kp LPAR  &kp RBKT   &none
-   &none  &kp LALT  &kp LCTRL  &kp LCMD  &kp LSHFT &none       &kp SEMI    &hm RSHFT DLLR  &kp PRCNT  &kp CARET &kp MINUS  &none
+   &none  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT   &kp LBRC    &kp AMPS        &kp ASTRK  &kp PLUS  &kp RBRC   &none
+   &none  &kp LALT  &kp LCTRL  &kp LCMD  &kp LSHFT &none       &kp COLON   &hm RSHFT DLLR  &kp PRCNT  &kp CARET &kp UNDER  &none
    &none  &none     &none      &none     &none     &none       &kp DOT     &kp EXCL        &kp AT     &kp HASH  &kp BSLH   &none
                                        &trans &trans &trans    &kp LPAR    &kp RPAR &kp TILDE
                         >;
