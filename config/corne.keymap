@@ -34,12 +34,12 @@
 // |  TAB |  Q   |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P   | BSPC |
 // |  ESC |  A   |  S   |  D   |  F   |  G  |   |  H  |  J   |  K   |  L   |  ;   |  '   |
 // | LSFT |  Z   |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /   | RSFT |
-//          | LALT/ESC | LCMD/SPC| NAV0/TAB |   | NROW/RET | RCTL/BSPC | CTRL/DEL |
+//          | LALT/ESC | LCMD/TAB| NAV0/SPC |   | NROW/RET | RCTL/BSPC | CTRL/DEL |
                         bindings = <
    &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T   &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
    &kp ESC    &kp A  &kp S  &kp D  &kp F  &kp G   &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
    &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-       &mt LALT ESC &mt LCMD SPACE &lt NAV0 TAB   &lt NROW RET &mt RCTRL BSPC &lt CTRL DEL
+       &mt LALT ESC &mt LCMD TAB &lt NAV0 SPACE   &lt NROW RET &mt RCTRL BSPC &lt CTRL DEL
                         >;
                 };
                 qwerty_layer {
@@ -52,7 +52,7 @@
    &none  &kp Q       &kp W        &kp E       &kp R        &kp T   &kp Y  &kp U        &kp I      &kp O        &kp P          &kp C_VOL_UP
    &none  &hm LALT A  &hm LCTRL S  &hm LCMD D  &hm LSHFT F  &kp G   &kp H  &hm RSHFT J  &hm RCMD K &hm RCTRL L  &hm RALT SQT   &kp C_VOL_DN
    &none  &kp Z       &hm LCMD X   &kp C       &kp V        &kp B   &kp N  &kp M        &kp COMMA  &hm LCMD DOT &kp FSLH       &none
-                                &lt SYM ESC  &lt NUM SPACE &trans   &kp RET &kp BSPC &trans
+                                  &lt SYM ESC  &lt NUM TAB &trans   &kp RET &kp BSPC &trans
                         >;
                 };
                 workman_layer {
@@ -65,7 +65,7 @@
    &none   &kp Q       &kp D        &kp R       &kp W        &kp B   &kp J  &kp F        &kp U       &kp P        &kp SQT       &kp C_VOL_UP
    &none   &hm LALT A  &hm LCTRL S  &hm LCMD H  &hm LSHFT T  &kp G   &kp Y  &hm RSHFT N  &hm RCMD E  &hm RCTRL O  &hm RALT I    &kp C_VOL_DN
    &none   &kp Z       &hm LCMD X   &kp M       &kp C        &kp V   &kp K  &kp L        &kp COMMA   &hm LCMD DOT &kp FSLH      &none
-                                 &lt SYM ESC  &lt NUM SPACE &trans   &kp RET &kp BSPC &trans
+                                    &lt SYM ESC  &lt NUM TAB &trans   &kp RET &kp BSPC &trans
                         >;
                 };
                 npad_layer {
@@ -83,12 +83,12 @@
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// |      |      |      |      |       |      |   |  '   |      |      |       |     |      |
+// |      |      |      |      |       |      |   |      |  '   |      |       |     |      |
 // |      | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5    |   | LEFT | DOWN | UP   | Right |  -  |      |
 // |      | 0    | 9    | 8    |  7    | 6    |   | HOME | END  | PGUP | PGDN  | "|" |      |
 //             | SYM ESC | NUM TAB | NAV0/SPC |   | RET | BSPC | DEL |
                         bindings = <
-   &none  &none        &none         &none        &none         &none    &kp SQT   &none     &none      &none      &none        &none
+   &none  &none        &none         &none        &none         &none    &none     &kp SQT   &none      &none      &none        &none
    &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
    &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
                                                   &trans &trans &trans   &kp RET &kp BSPC &kp DEL
