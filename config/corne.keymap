@@ -83,15 +83,15 @@
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// |      |      |      |      |       |      |   |      |  '   |      |       |     |      |
-// |      | 1/⌥  | 2/^  | 3/⌘  |  4/⇧  | 5    |   | LEFT | DOWN | UP   | Right |  -  |      |
-// |      | 0    | 9    | 8    |  7    | 6    |   | HOME | END  | PGUP | PGDN  | "|" |      |
+// |      |      |      |      | VOL DN | VOL UP |   |      |  '   |      |       |     |      |
+// |      | 1/⌥  | 2/^  | 3/⌘  |  4/⇧   | 5      |   | LEFT | DOWN | UP   | Right |  -  |      |
+// |      | 0    | 9    | 8    |  7     | 6      |   | HOME | END  | PGUP | PGDN  | "|" |      |
 //             | SYM ESC | NUM TAB | NAV0/SPC |   | RET | BSPC | DEL |
                         bindings = <
-   &none  &none        &none         &none        &none         &none    &none     &kp SQT   &none      &none      &none        &none
-   &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
-   &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6   &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
-                                                  &trans &trans &trans   &kp RET &kp BSPC &kp DEL
+   &none  &none        &none         &none        &kp C_VOL_DN  &kp C_VOL_UP    &none     &kp SQT   &none      &none      &none        &none
+   &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5          &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
+   &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6          &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
+                                                  &trans &trans &trans          &kp RET &kp BSPC &kp DEL
                         >;
                 };
                 num_layer {
@@ -140,10 +140,10 @@
 // |    | F10 | F1 | F2 | F3 |    |   | TG QWTY | TG WMAN | TG NPAD |      |       |   |
 //              | ESC | TAB | SPC |   | RET | BSPC | CTRL/DEL |
                         bindings = <
-   &none &kp F12 &kp F7 &kp F8 &kp F9 &none   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none
-   &none &kp F11 &kp F4 &kp F5 &kp F6 &none   &none        &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
-   &none &kp F10 &kp F1 &kp F2 &kp F3 &none   &tog QWTY    &tog WMAN    &tog NPAD    &none        &none      &none
-                  &kp ESC &kp SPACE &kp TAB   &trans &trans &trans
+   &none &kp F12 &kp F7 &kp F8 &kp F9 &kp C_VOL_UP   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none
+   &none &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_DN   &none        &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
+   &none &kp F10 &kp F1 &kp F2 &kp F3 &none          &tog QWTY    &tog WMAN    &tog NPAD    &none        &none      &none
+                         &kp ESC &kp SPACE &kp TAB   &trans &trans &trans
                         >;
                 };
         };
