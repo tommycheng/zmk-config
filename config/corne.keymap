@@ -83,14 +83,14 @@
                 };
                 nav0_layer {
 // -----------------------------------------------------------------------------------------
-// |      |      |      |      | VOL DN | VOL UP |   |      |  '   |      |       |     |      |
+// |      |      |      |      | VOL DN | VOL UP |   |      |  '   | HOME | PGUP  |     |      |
 // |      | 1/⌥  | 2/^  | 3/⌘  |  4/⇧   | 5      |   | LEFT | DOWN | UP   | Right |  -  |      |
-// |      | 0    | 9    | 8    |  7     | 6      |   | HOME | END  | PGUP | PGDN  | "|" |      |
+// |      | 0    | 9    | 8    |  7     | 6      |   |      |      | END  | PGDN  | "|" |      |
 //             | SYM ESC | NUM TAB | NAV0/SPC |   | RET | BSPC | DEL |
                         bindings = <
-   &none  &none        &none         &none        &kp C_VOL_DN  &kp C_VOL_UP    &none     &kp SQT   &none      &none      &none        &none
-   &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5          &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp MINUS    &none
-   &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6          &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp PIPE     &none
+   &none  &none        &none         &none        &kp C_VOL_DN  &kp C_VOL_UP    &none     &kp SQT   &kp HOME  &kp PG_UP  &none        &none
+   &none  &hm LALT N1  &hm LCTRL N2  &hm LCMD N3  &hm LSHFT N4  &kp N5          &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp MINUS    &none
+   &none  &kp N0       &kp N9        &kp N8       &kp N7        &kp N6          &none     &none     &kp END   &kp PG_DN  &kp PIPE     &none
                                                   &trans &trans &trans          &kp RET &kp BSPC &kp DEL
                         >;
                 };
