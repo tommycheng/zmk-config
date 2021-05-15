@@ -145,12 +145,12 @@
                   label = "ctrl";
 // -----------------------------------------------------------------------------------------
 // |    | F12 | F7 | F8 | F9 |    |   | bt 0    | bt 1    | bt 2    | bt 3 | btclr |   |
-// |    | F11 | F4 | F5 | F6 |    |   |         |  ⇧      |  ⌘      |  ^   |   ⌥   |   |
+// |    | F11 | F4 | F5 | F6 |    |   | RGB_TOG |  ⇧      |  ⌘      |  ^   |   ⌥   |   |
 // |    | F10 | F1 | F2 | F3 |    |   | TG QWTY | TG WMAN | TG NPAD |      |       |   |
 //              | ESC | TAB | SPC |   | RET | BSPC | CTRL/DEL |
                         bindings = <
    &none &kp F12 &kp F7 &kp F8 &kp F9 &kp C_VOL_UP   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none
-   &none &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_DN   &none        &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
+   &none &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_DN   &RGB_TOG     &kp LSHFT    &kp LCMD     &kp LCTRL    &kp LALT   &none
    &none &kp F10 &kp F1 &kp F2 &kp F3 &none          &tog QWTY    &tog WMAN    &tog NPAD    &none        &none      &none
                          &kp ESC &kp SPACE &kp TAB   &trans &trans &trans
                         >;
