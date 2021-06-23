@@ -96,7 +96,7 @@
    &none  &kp N8       &kp N9        &kp N4       &kp N3        &kp N2          &none     &kp SQT   &kp HOME  &kp PG_UP  &none        &none
    &none  &hm LALT N7  &hm LCTRL N6  &hm LCMD N5  &hm LSHFT N0  &kp N1          &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp MINUS    &none
    &none  &none        &kp LCMD      &kp LSHFT    &kp C_VOL_DN  &kp C_VOL_UP    &none     &none     &kp END   &kp PG_DN  &kp PIPE     &none
-                                                  &trans &trans &trans          &kp RET &LA(BSPC) &kp DEL
+                                                  &trans &trans &trans          &kp RET &kp LA(BSPC) &kp DEL
                         >;
                 };
                 num_layer {
